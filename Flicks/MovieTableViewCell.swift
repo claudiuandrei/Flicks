@@ -51,5 +51,16 @@ class MovieTableViewCell: UITableViewCell {
             movieDescriptionLabel.text = description
         }
     }
-
+    
+    func highlight() {
+        backgroundColor = UIColor.darkGray
+        movieTitleLabel.textColor = UIColor.white
+        movieDescriptionLabel.textColor = UIColor.white
+    }
+    
+    func unhighlight() {
+        backgroundColor = UIColor.white
+        movieTitleLabel.textColor = UIColor.darkText
+        movieDescriptionLabel.textColor = UIColor.darkText
+    }
 }

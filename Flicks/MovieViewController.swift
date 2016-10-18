@@ -30,7 +30,7 @@ class MovieViewController: UIViewController {
         
         // Setup image
         if let imagePath = data?["poster_path"].string {
-            let imageURL = URL(string: "\(imageURLPrefix)/w500/\(imagePath)")
+            let imageURL = URL(string: "\(imageURLPrefix)/w780/\(imagePath)")
             movieImageView.setImageWith(imageURL!)
         }
     

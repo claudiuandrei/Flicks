@@ -108,6 +108,18 @@ class MoviesTableViewController: UITableViewController {
             getNextNowPlaying()
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? MovieTableViewCell {
+            cell.highlight()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? MovieTableViewCell {
+            cell.unhighlight()
+        }
+    }
 
 
     // MARK: - Navigation

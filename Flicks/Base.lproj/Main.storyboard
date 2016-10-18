@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="on6-fS-1eY" id="XeY-Ba-H2D">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <searchBar contentMode="redraw" misplaced="YES" searchBarStyle="minimal" showsCancelButton="YES" id="Pg5-4g-tf9">
@@ -44,11 +44,11 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="movieImageCell" rowHeight="128" id="vxZ-oh-E7P" customClass="MovieTableViewCell" customModule="Flicks" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="movieImageCell" rowHeight="128" id="vxZ-oh-E7P" customClass="MovieTableViewCell" customModule="Flicks" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="136" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vxZ-oh-E7P" id="HOV-Wz-rdf">
-                                    <frame key="frameInset" width="342" height="127"/>
+                                    <frame key="frameInset" width="342" height="127.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="gb2-1p-mXw">
@@ -82,7 +82,7 @@
                                 <rect key="frame" x="0.0" y="264" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t8Z-z8-ZmU" id="QTB-LW-Ful">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <activityIndicatorView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" id="HP7-Mz-PZI">
@@ -100,6 +100,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Now Playing" id="fbZ-xt-GBq"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="JRj-0E-cPO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <action selector="refresh:" destination="QOC-fu-aG9" eventType="valueChanged" id="rnL-wN-ffU"/>
@@ -165,9 +166,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pwl-5F-185" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gp2-p7-ENa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="gp2-p7-ENa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
